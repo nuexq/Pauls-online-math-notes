@@ -1,2 +1,50 @@
-# Pauls-online-math-notes
-Soothing pastel theme for Pauls online math notes (tutorial.math.lamar.edu)
+<h3 align="center">
+  Catppuccin for <a href="https://tutorial.math.lamar.edu/">Pauls Online Math Notes</a>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nuexq/pauls-online-math-notes/main/assets/catwalk.webp"/>
+</p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="https://raw.githubusercontent.com/nuexq/pauls-online-math-notes/main/assets/latte.png"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="https://raw.githubusercontent.com/nuexq/pauls-online-math-notes/main/assets/frappe.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="https://raw.githubusercontent.com/nuexq/pauls-online-math-notes/main/assets/macchiato.png"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="https://raw.githubusercontent.com/nuexq/pauls-online-math-notes/main/assets/mocha.png"/>
+</details>
+
+## Usage
+
+1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
+2. Then install with Stylus ([click on the link](https://github.com/nuexq/pauls-online-math-notes/raw/main/src/catppuccin.user.less)):
+3. Choose Your accent color by Setting Theme in Stylus Options
+
+## 💝 Thanks to
+
+- [nuexq](https://github.com/nuexq)
+
+&nbsp;
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
+
+<p align="center">
+	Copyright &copy; 2025-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+</p>
+
+<p align="center">
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+</p>
