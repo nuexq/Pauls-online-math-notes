@@ -1,0 +1,268 @@
+/* ==UserStyle==
+@name Pauls Online Math Notes Catppuccin
+@namespace github.com/nuexq/pauls-online-math-notes
+@homepageURL https://github.com/nuexq/pauls-online-mathnotes
+@version 2000.01.01
+@updateURL https://github.com/nuexq/pauls-online-math-notes/raw/main/src/catppuccin.user.less
+@supportURL https://github.com/nuexq/pauls-online-math-notes/issues?q=is%3Aopen+is%3Aissue
+@description Soothing pastel theme for Pauls Online Math Notes
+@author nuexq
+@license MIT
+
+@preprocessor less
+@var select Flavor "Dark Flavor" ["latte:Latte", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve*", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Gray"]
+==/UserStyle== */
+@import "https://userstyles.catppuccin.com/lib/lib.less";
+
+@-moz-document domain("tutorial.math.lamar.edu") {
+  :root {
+    #catppuccin(@Flavor);
+  }
+
+  #catppuccin(@Flavor);
+
+  #catppuccin(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+    --obsidian-clipper-background-primary: @base;
+    --obsidian-clipper-background-primary-rgb: #lib.rgbify(@base) [];
+    --obsidian-clipper-text-muted: @surface2;
+
+
+    * {
+      text-shadow: none;
+    }
+
+    .hover-style(@c, @amount: 10%) {
+      color: @c;
+
+      &:hover {
+        color: darken(@c, @amount);
+      }
+    }
+
+
+    body {
+      background-color: @base;
+      color: @text;
+    }
+
+    a {
+      .hover-style(@accent);
+
+      &::after,
+      &::before {
+        color: @text;
+      }
+    }
+
+    // header
+    .header {
+      background-color: @accent;
+      color: @text;
+
+      .header-row {
+        .header-side-menu-icon {
+          background-color: @base;
+
+          a {
+            color: @text;
+          }
+        }
+
+        .top-menu button,
+        #header-search-icon {
+          background-color: @accent;
+
+          &:hover {
+            background-color: @base;
+
+            span {
+              color: @accent;
+            }
+          }
+
+          border-color: @base;
+
+          span {
+            color: @base;
+          }
+        }
+
+        .header-title .header-title-link {
+          color: @base;
+        }
+      }
+    }
+
+    .top-info-bar {
+      background-color: @base;
+
+      .top-menu-breadcrumb {
+        background-color: @accent;
+        border-color: @accent;
+        color: @base;
+
+        a {
+          color: @base;
+        }
+      }
+    }
+
+    #nav_links {
+      background-color: @base;
+      border-color: @accent;
+
+      #nav_current_notes,
+      #nav_current_practice,
+      #nav_current_asgn {
+        background-color: @accent;
+        border-color: @accent;
+        padding: 0 0.50rem 0 0.50rem;
+      }
+
+      a {
+        border-color: @accent;
+
+        &:hover {
+          background-color: @accent;
+          color: @base;
+
+          span.top-menu-next::before,
+          span.top-menu-prev::before {
+            color: @base;
+          }
+        }
+
+        span.top-menu-next::before,
+        span.top-menu-prev::before {
+          color: @accent;
+        }
+
+        padding: 0 0.5rem 0 0.50rem;
+      }
+    }
+
+    // nav
+    nav#menu {
+      background-color: @base;
+
+      .mm-navbars-top {
+        border-color: @surface0;
+      }
+
+      .mm-navbar {
+        .mm-breadcrumbs {
+          color: @accent !important;
+        }
+
+        a::before,
+        a::after {
+          border-color: @surface0;
+        }
+      }
+
+      ul.mm-listview {
+        li {
+          &::after {
+            border-color: @surface0;
+          }
+
+          a {
+            color: @text;
+
+            &:hover {
+              border-color: @accent;
+            }
+
+            &::before,
+            &::after {
+              border-color: @surface0;
+            }
+          }
+
+          span {
+            background-color: @accent;
+            color: @base;
+            border-color: @accent;
+            text-shadow: none;
+          }
+        }
+      }
+    }
+
+    // content note
+    .content-note-link-mobile {
+      .hover-style(@accent);
+
+      &.fa-caret-down {
+        color: @text;
+      }
+    }
+
+    .content-note-container {
+      border-color: @yellow;
+      background-color: lighten(@yellow, 15%);
+      color: @base;
+
+      .content-note-header {
+        background-color: @yellow;
+        border-color: @yellow;
+        color: @base;
+      }
+    }
+
+    .property,
+    .definition {
+      background-color: lighten(@teal, 10%);
+      color: @base;
+      box-shadow: none;
+      border-color: darken(@teal, 20%);
+    }
+
+    .example {
+      box-shadow: none;
+      border-color: @surface1;
+    }
+
+    span[class*="SH-Link"] {
+      color: @accent;
+
+      &::before,
+      &::after {
+        color: @text;
+      }
+    }
+
+    .content-separator,
+    .content-sub-separator,
+    .header-divider,
+    .footer {
+      border-color: @accent;
+    }
+
+    span.soln-title {
+      .hover-style(@accent);
+    }
+
+    .soln-content {
+      box-shadow: none;
+      border-color: @surface1;
+    }
+
+    #MJXc-Node-126 {
+      border-color: @green !important;
+    }
+
+    h1,
+    h2,
+    h3 {
+      box-shadow: none;
+      border-color: @surface1;
+    }
+
+    // footer
+
+  }
+}
